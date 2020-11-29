@@ -4,27 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3mergaite</title>
+    <!-- comments (add/remove): ctrl + / -->
+    <!-- todo: favicon -->
+
     <style>
-        main {display: inline-block; 
-        width: 800px; 
-        background-color: lightskyblue; 
+        /* stiliaus suvienodinimas visiems elementams */
+        /* zvaigzdute reiskias jog galioja absoliuciai visiems elementams */
+        body,
+        body * {
+            margin: 0; /* Visiems elementams panaikinamas atsistumimas jeigu iki tol jis buvo padarytas */
+            padding: 0; /* Visiems elementams panaikinamas issiputimas jeigu iki tol jis buvo padarytas */
+            vertical-align: top; /* Visose lentelese padaromas ligiavimas pagal virsu */
+            box-sizing: border-box; /* Sulygina skirtingu elementu dydzius atsizvialgiant i turini */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Priskiriamas fontas konkreciam blokui */
+        }
+        /* mano norimas psl stilius */
+        body {background-color: #F8F8F8;
+        }
+        body>main {
+            display: inline-block;
+        width: 800px;
         margin-left: calc(50% - 400px);}
         header {
             display: inline-block;
             width: 100%;
+            margin-top: 20px;
+            color: #9F9F9F;
         }
-        img {
+       header>img {
             display: inline-block;
             float: left;
+            height: 50px;
         }
         nav {
             display: inline-block;
             float: right;
-        }
+            margin-top: 7px;
+            }
+            
+            a {
+                display: inline-block;
+                padding: 2px;
+                padding-left: 15px;
+                padding-right: 15px;
+                text-decoration: none;
+                font-size: 17px;
+                float: left;
+                margin-left: 10px;
+                color: #9F9F9F;
+                border: 2px solid transparent;
+            }
+            a:last-of-type {
+            border-color:  #9F9F9F;
+            text-transform: uppercase;
+            border-radius: 22px;
+
+            }
+
         section {
             display: inline-block;
             width: 100%;
+            padding: 20px;
+            margin-top: 60px;
         }
+        div {
+            display: inline-block;
+        width: 45%;
+        margin-top: 40px;
+        color: #9F9F9F;
+        }
+        h1 {
+            display: inline-block;
+            width: 100%;
+            font-size: 60px;
+        }
+        p {
+            display: inline-block;
+            width: 100%;
+            font-size: 24px;
+        }
+        section>img {
+            display: inline-block;
+            width: 45%;
+            float: right;
+        }
+      
     </style>
 </head>
 <body>
